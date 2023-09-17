@@ -28,9 +28,8 @@ const Hero = ({}: HeroProps) => {
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto mb-[3.875rem] text-center md:mb-20 lg:mb-[6.25rem]">
           <h1 className="h1 mb-6">
-            Poply, The Community Based NFT{" "}
             <span className="inline-block relative">
-              Marketplace
+              Poply
               <Image
                 className="absolute top-full left-0 w-full xl:-mt-2"
                 src="/images/curve.png"
@@ -39,6 +38,7 @@ const Hero = ({}: HeroProps) => {
                 alt="Curve"
               />
             </span>
+            , The Community Based NFT Marketplace
           </h1>
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
             combining cutting-edge AI technology with the power of blockchain to
