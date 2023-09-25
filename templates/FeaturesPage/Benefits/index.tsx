@@ -1,5 +1,4 @@
 import { useRef, useState } from "react";
-import Link from "next/link";
 import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 import Section from "@/components/Section";
 import Image from "@/components/Image";
@@ -42,12 +41,7 @@ const Benefits = ({}: BenefitsProps) => {
                         {benefits.map((item) => (
                             <SplideSlide key={item.id}>
                                 <div className="flex items-center mb-6">
-                                    <Image
-                                        src={item.iconUrl}
-                                        width={48}
-                                        height={48}
-                                        alt={item.title}
-                                    />
+                                    
                                 </div>
                                 <h5 className="h6 mb-4">{item.title}</h5>
                                 <p className="body-2 text-n-3">{item.text}</p>
