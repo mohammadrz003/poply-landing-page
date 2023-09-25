@@ -7,8 +7,8 @@ import Help from "./Help";
 const HowToUsePage = () => {
     return (
         <Layout>
-            <HowToUse />
-            <Help />
+            {/* <HowToUse />
+            <Help /> */}
         </Layout>
     );
 };

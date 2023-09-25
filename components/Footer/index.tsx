@@ -17,7 +17,7 @@ const Footer = ({}: FooterProps) => (
         <div className="flex items-center justify-center h-[6.5rem] mb-6 border-b border-n-6 lg:justify-start">
             <Logo />
             <nav className="hidden lg:flex items-center justify-center ml-auto">
-                {navigation.slice(0, -1).map((item) => (
+                {navigation.map((item) => (
                     <Link
                         className={`px-12 py-8 font-code text-xs font-semibold leading-5 uppercase text-n-1/50 transition-colors hover:text-n-1`}
                         href={item.url}
@@ -30,7 +30,7 @@ const Footer = ({}: FooterProps) => (
         </div>
         <div className="lg:flex lg:items-center lg:justify-between">
             <div className="hidden caption text-n-4 lg:block">
-                © {new Date().getFullYear()} UI8
+                © {new Date().getFullYear()} Poply. All rights reserved.
             </div>
             <div className="flex justify-center -mx-4">
                 {socials.map((item) => (

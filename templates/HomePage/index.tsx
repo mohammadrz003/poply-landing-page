@@ -24,7 +24,7 @@ const HomePage = () => {
       {/* <Pricing /> */}
       <Testimonials />
       <Roadmap />
-      <Join />
+      {/* <Join /> */}
     </Layout>
   );
 };

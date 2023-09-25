@@ -8,9 +8,9 @@ import Roadmap from "./Roadmap";
 const RoadmapPage = () => {
     return (
         <Layout>
-            <Hero />
+            {/* <Hero />
             <Roadmap />
-            <Join />
+            <Join /> */}
         </Layout>
     );
 };

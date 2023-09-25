@@ -52,9 +52,7 @@ const Header = ({}: HeaderProps) => {
                     <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
                         {navigation.map((item) => (
                             <Link
-                                className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
-                                    item.onlyMobile ? "lg:hidden" : ""
-                                } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
+                                className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
                                     item.url === pathname
                                         ? "z-2 lg:text-n-1"
                                         : "lg:text-n-1/50"
@@ -105,16 +103,8 @@ const Header = ({}: HeaderProps) => {
                         <div className="absolute top-[26.8rem] left-12 w-6 h-6 bg-gradient-to-b from-[#88E5BE] to-[#1A1A32] rounded-full"></div>
                     </div>
                 </nav>
-                <Link
-                    className={`button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block ${
-                        searchParams.has("new") ? "lg:text-n-1" : ""
-                    }`}
-                    href="/login?new=true"
-                >
-                    New account
-                </Link>
-                <Button className="hidden lg:flex" href="/login">
-                    Sign in
+                <Button className="hidden lg:flex">
+                    Connect Wallet
                 </Button>
                 <Button
                     className="ml-auto lg:hidden"

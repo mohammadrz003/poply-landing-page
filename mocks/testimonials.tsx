@@ -5,30 +5,25 @@ export const testimonials = [
     imageUrl: "/images/testimonials/testimonial-1.png",
     name: "Mohammad Rezaei",
     role: "Full-stack developer",
-    text: "I was blown away by the accuracy and speed of the AI chatbot on Brainwave. It was able to understand my queries and provide relevant recommendations in seconds.",
+    text: "Mohammad Rezaei is a seasoned full-stack developer with a passion for creating efficient and user-friendly web applications. He has a deep understanding of both frontend and backend development, enabling him to deliver end-to-end solutions that meet clients' needs.",
+    link: "https://twitter.com/mmdrz003"
   },
   {
     id: "1",
-    logoUrl: "/images/yourlogo.svg",
+    logoUrl: "/images/testimonials/madhav.png",
     imageUrl: "/images/testimonials/testimonial-2.png",
-    name: "Jane Doe",
-    role: "UX Designer",
-    text: "Brainwave has revolutionized the way I interact with digital assistants. The AI chatbot is able to understand my preferences and provide customized suggestions that are tailored to my needs. The app is user-friendly and intuitive, making it a joy to use.",
+    name: "Madhav Gupta",
+    role: "Blockchain developer",
+    text: "Meet Madhav, an accomplished blockchain developer with a deep passion for transforming the world through decentralized technologies. He have honed his skills to build groundbreaking blockchain-based applications and smart contracts.",
+    link: "https://twitter.com/Madhav__28"
   },
   {
     id: "2",
-    logoUrl: "/images/yourlogo.svg",
+    logoUrl: "/images/testimonials/ismail.png",
     imageUrl: "/images/testimonials/testimonial-3.png",
-    name: "Jane Smith",
-    role: "UX Designer",
-    text: "I was blown away by the accuracy and speed of the AI chatbot on Brainwave. It was able to understand my queries and provide relevant recommendations in seconds.",
-  },
-  {
-    id: "3",
-    logoUrl: "/images/yourlogo.svg",
-    imageUrl: "/images/testimonials/testimonial-4.png",
-    name: "Jane Smith",
-    role: "UX Designer",
-    text: "I was blown away by the accuracy and speed of the AI chatbot on Brainwave. It was able to understand my queries and provide relevant recommendations in seconds.",
+    name: "Ismail Moazami",
+    role: "Blockchain developer",
+    text: "Ismail, a talented blockchain developer at the forefront of innovation in decentralized technologies. With a passion for harnessing the power of blockchain, Ismail Moazami excels in designing and implementing robust and secure solutions.",
+    link: "https://twitter.com/IsmailMoazami"
   },
 ];

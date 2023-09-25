@@ -55,7 +55,7 @@ const Hero = ({}: HeroProps) => {
               <div className="aspect-[33/40] rounded-b-[0.875rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
                 <Image
                   className="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10.5%] lg:-translate-y-[23.5%]"
-                  src="/images/hero/robot.jpg"
+                  src="/images/hero/modern-browser-mockup.png"
                   width={1024}
                   height={490}
                   alt="AI"

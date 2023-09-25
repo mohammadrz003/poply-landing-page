@@ -11,12 +11,12 @@ import Community from "./Community";
 const FeaturesPage = () => {
     return (
         <Layout>
-            <Hero />
+            {/* <Hero />
             <Benefits />
             <Features />
             <Community />
             <Services containerClassName="md:pb-10" />
-            <Join />
+            <Join /> */}
         </Layout>
     );
 };

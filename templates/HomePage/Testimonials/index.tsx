@@ -1,6 +1,7 @@
 import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 import Section from "@/components/Section";
 import Tagline from "@/components/Tagline";
+import Link from "next/link";
 import Button from "@/components/Button";
 import Image from "@/components/Image";
 
@@ -13,7 +14,7 @@ type TestimonialsProps = {};
 const Testimonials = ({}: TestimonialsProps) => (
   <Section className="overflow-hidden">
     <div className="container relative z-2">
-      <Heading tag="Problems and solutions" title="Which problems we solve?" />
+      <Heading tag="Uniting talents, driving success" title="Meet our Team" />
       <Splide
         className="splide-custom splide-visible"
         options={{
@@ -63,7 +64,9 @@ const Testimonials = ({}: TestimonialsProps) => (
                 <div className="relative flex z-1 bg-conic-gradient p-0.25 rounded-2xl md:ml-auto">
                   <div className="flex flex-col items-start p-8 bg-n-8 rounded-[0.9375rem] md:w-[21.75rem]">
                     <p className="quote mb-8">{item.text}</p>
-                    <Button className="mt-auto">Visit link</Button>
+                    <Link href={item.link} target="_blank">
+                      <Button className="mt-auto">Twitter</Button>
+                    </Link>
                   </div>
                 </div>
               </div>
