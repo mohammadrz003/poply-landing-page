@@ -1,26 +1,9 @@
 "use client";
 
 import Layout from "@/components/Layout";
+import config from "@/constants/config";
 import axios from "axios";
 import { ChangeEvent, FormEvent, useState } from "react";
-
-interface UserWaitlistData {
-  amount_referred: number;
-  answers: [];
-  created_at: string;
-  email: string;
-  priority: number;
-  referral_link: string;
-  referral_token: string;
-  referred_by_signup_token: any;
-  referred_by_waiter_token: any;
-  removed_date: any;
-  removed_priority: any;
-  uuid: string;
-  verified: boolean;
-  waitlist_api_key: string;
-  waitlist_id: number;
-}
 
 type Props = {};
 
@@ -45,7 +28,7 @@ const Page = (props: Props) => {
         "/api/waitlist",
         {
           email: waitlistEmail,
-          waitlist_id: 10857,
+          waitlist_id: config.WAITLIST_ID,
         },
         {
           headers: {
