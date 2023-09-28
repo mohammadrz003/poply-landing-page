@@ -11,7 +11,7 @@ type RoadmapProps = {};
 const Roadmap = ({}: RoadmapProps) => (
     <Section className="overflow-hidden">
         <div className="container md:pb-10">
-            <Heading tag="Ready to get started" title="What we’re working on" />
+            <Heading tag="What we’re working on" title="Our Roadmap for Success" />
             <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
                 {roadmap.map((item, index) => (
                     <div
@@ -59,9 +59,9 @@ const Roadmap = ({}: RoadmapProps) => (
                                     </div>
                                 </div>
                                 <div className="mb-8 md:mb-20">
-                                    <div className="-my-10 -mx-15">
+                                    <div className="flex justify-center -my-10 -mx-15">
                                         <Image
-                                            className="w-full"
+                                            className="w-1/2 mx-auto"
                                             src={item.imageUrl}
                                             width={628}
                                             height={426}

@@ -103,8 +103,8 @@ const Header = ({}: HeaderProps) => {
                         <div className="absolute top-[26.8rem] left-12 w-6 h-6 bg-gradient-to-b from-[#88E5BE] to-[#1A1A32] rounded-full"></div>
                     </div>
                 </nav>
-                <Button className="hidden lg:flex">
-                    Connect Wallet
+                <Button className="hidden lg:flex" href="https://app.poply.xyz" target="_blank">
+                    Launch App
                 </Button>
                 <Button
                     className="ml-auto lg:hidden"

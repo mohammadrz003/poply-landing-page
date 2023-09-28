@@ -1,7 +1,7 @@
 export const svgs = (white: boolean | undefined) => (
     <>
         <svg
-            className="absolute top-0 left-0"
+            className="absolute top-0 left-[1px]"
             width="21"
             height="44"
             viewBox="0 0 21 44"

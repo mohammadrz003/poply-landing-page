@@ -43,46 +43,39 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta
-          content="Beautiful AI Landing Page UI Kit for your next website projects"
-          name="Brainwave - AI Landing Page Kit"
+          content="Poply, the premier NFT marketplace for the Monad blockchain, is your gateway to trading NFTs in a secure and decentralized environment."
+          name="Poply - Community Based NFT Marketplace"
         />
-        <meta content="Brainwave - AI Landing Page Kit" property="og:title" />
+        <meta content="Poply - Community Based NFT Marketplace" property="og:title" />
         <meta
-          content="Beautiful AI Landing Page UI Kit for your next website projects"
+          content="Poply, the premier NFT marketplace for the Monad blockchain, is your gateway to trading NFTs in a secure and decentralized environment."
           property="og:description"
         />
-        <meta content="%PUBLIC_URL%/fb-og-image.png" property="og:image" />
+        <meta content="%PUBLIC_URL%/opengraph-image.png" property="og:image" />
         <meta
           property="og:url"
-          content="https://ui8.net/ui8/products/brainwave-ai-landing-page-kit"
+          content="https://poply.xyz"
         />
         <meta
           property="og:site_name"
-          content="Brainwave - AI Landing Page Kit"
+          content="Poply - Community Based NFT Marketplace"
         />
         <meta
-          content="Brainwave - AI Landing Page Kit"
+          content="Poply - Community Based NFT Marketplace"
           property="twitter:title"
         />
         <meta
-          content="Beautiful AI Landing Page UI Kit for your next website projects"
+          content="Poply, the premier NFT marketplace for the Monad blockchain, is your gateway to trading NFTs in a secure and decentralized environment."
           property="twitter:description"
         />
         <meta
-          content="%PUBLIC_URL%/twitter-card.png"
+          content="%PUBLIC_URL%/twitter-image.png"
           property="twitter:image"
         />
-        <meta property="og:type" content="Article" />
-        <meta content="summary" name="twitter:card" />
-        <meta name="twitter:site" content="@ui8" />
-        <meta name="twitter:creator" content="@ui8" />
-        <meta property="fb:admins" content="132951670226590" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1"
         />
-        <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#ffffff" />
       </head>
       <Providers>
         <body
@@ -93,11 +86,11 @@ export default function RootLayout({
             <defs>
               <linearGradient id="btn-left" x1="50%" x2="50%" y1="0%" y2="100%">
                 <stop offset="0%" stopColor="#89F9E8" />
-                <stop offset="100%" stopColor="#FACB7B" />
+                <stop offset="100%" stopColor="#52DE97" />
               </linearGradient>
               <linearGradient id="btn-top" x1="100%" x2="0%" y1="50%" y2="50%">
-                <stop offset="0%" stopColor="#D87CEE" />
-                <stop offset="100%" stopColor="#FACB7B" />
+                <stop offset="0%" stopColor="#52DE97" />
+                <stop offset="100%" stopColor="#52DE97" />
               </linearGradient>
               <linearGradient
                 id="btn-bottom"
@@ -106,7 +99,7 @@ export default function RootLayout({
                 y1="50%"
                 y2="50%"
               >
-                <stop offset="0%" stopColor="#9099FC" />
+                <stop offset="0%" stopColor="#00F3E4" />
                 <stop offset="100%" stopColor="#89F9E8" />
               </linearGradient>
               <linearGradient
@@ -116,8 +109,8 @@ export default function RootLayout({
                 y1="0%"
                 y2="100%"
               >
-                <stop offset="0%" stopColor="#9099FC" />
-                <stop offset="100%" stopColor="#D87CEE" />
+                <stop offset="0%" stopColor="#00F3E4" />
+                <stop offset="100%" stopColor="#52DE97" />
               </linearGradient>
             </defs>
           </svg>

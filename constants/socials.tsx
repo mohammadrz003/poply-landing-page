@@ -3,13 +3,13 @@ export const socials = [
         id: "0",
         title: "Discord",
         iconUrl: "/images/socials/discord.svg",
-        url: "https://twitter.com/poply_xyz",
+        url: "#",
     },
     {
         id: "1",
         title: "Twitter",
         iconUrl: "/images/socials/twitter.svg",
-        url: "#",
+        url: "https://twitter.com/poply_xyz",
     },
     {
         id: "2",
