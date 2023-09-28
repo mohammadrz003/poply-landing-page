@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@netlify/plugin-nextjs": "^4.40.1",
     "@splidejs/react-splide": "^0.7.12",
     "@tippyjs/react": "^4.2.6",
     "@types/node": "20.1.2",
@@ -37,5 +36,8 @@
     "tailwindcss": "^3.3.2",
     "typescript": "5.0.4",
     "wagmi": "^0.6.3"
+  },
+  "devDependencies": {
+    "@netlify/plugin-nextjs": "^4.29.5-appdir.0"
   }
 }
