@@ -46,9 +46,8 @@ const Benefits = ({}: BenefitsProps) => {
           <SplideTrack>
             {benefits.map((item) => (
               <SplideSlide key={item.id}>
-                <Link
+                <div
                   className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
-                  href="/features"
                   style={{
                     backgroundImage: `url(${item.backgroundUrl})`,
                   }}
@@ -63,12 +62,6 @@ const Benefits = ({}: BenefitsProps) => {
                       >
                         {item.icon}
                       </div>
-                      <div className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
-                        Explore more
-                      </div>
-                      <svg className="ml-5 fill-n-1" width="24" height="24">
-                        <path d="M8.293 5.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L13.586 12 8.293 6.707a1 1 0 0 1 0-1.414z" />
-                      </svg>
                     </div>
                   </div>
                   {item.light && (
@@ -80,7 +73,7 @@ const Benefits = ({}: BenefitsProps) => {
                       clipPath: "url(#benefits)",
                     }}
                   ></div>
-                </Link>
+                </div>
               </SplideSlide>
             ))}
           </SplideTrack>
