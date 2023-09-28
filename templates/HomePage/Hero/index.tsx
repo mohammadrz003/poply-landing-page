@@ -44,8 +44,8 @@ const Hero = ({}: HeroProps) => {
             combining cutting-edge AI technology with the power of blockchain to
             unlock new possibilities in the NFT ecosystem
           </p>
-          <Button href="https://guild.xyz/poply" white target="_blank">
-            Join Early
+          <Button href="/waitlist" white>
+            Join Waitlist
           </Button>
         </div>
         <div className="relative max-w-[23.25rem] mx-auto md:max-w-5xl xl:mb-24">

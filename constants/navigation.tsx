@@ -15,4 +15,9 @@ export const navigation = [
         title: "Roadmap",
         url: "/roadmap",
     },
+    {
+        id: "4",
+        title: "waitlist",
+        url: "/waitlist",
+    },
 ];
