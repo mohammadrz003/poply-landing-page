@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
-import FeaturesPage from "@/templates/FeaturesPage";
+import ContactUsPage from "@/templates/ContactUsPage";
 
 const Home: NextPage = () => {
-    return <FeaturesPage />;
+  return <ContactUsPage />;
 };
 
 export default Home;
