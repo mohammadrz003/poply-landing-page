@@ -1,7 +1,6 @@
 "use client";
 
 import Layout from "@/components/Layout";
-import config from "@/constants/config";
 import axios from "axios";
 import { ChangeEvent, FormEvent, useState } from "react";
 
@@ -28,7 +27,7 @@ const Page = (props: Props) => {
         "/api/waitlist",
         {
           email: waitlistEmail,
-          waitlist_id: config.WAITLIST_ID,
+          waitlist_id: process.env.NEXT_PUBLIC_WAITLIST_ID,
         },
         {
           headers: {
@@ -78,17 +77,16 @@ const Page = (props: Props) => {
                 </div>
                 <div className="col-span-2 border border-slate-700 rounded-lg p-5 text-center flex flex-col justify-center">
                   <p className="text-slate-400 text-xs mb-2">Leaderboard</p>
-                  <p className="text-slate-300 text-sm">
-                    <ul>
-                      {userWaitlistData?.waitlistLeaderboard?.leaderboard?.map(
-                        (item: any, index: number) => (
-                          <li key={index}>
-                            {index + 1}. {item.email}
-                          </li>
-                        )
-                      )}
-                    </ul>
-                  </p>
+
+                  <ul className="text-slate-300 text-sm">
+                    {userWaitlistData?.waitlistLeaderboard?.leaderboard?.map(
+                      (item: any, index: number) => (
+                        <li key={index}>
+                          {index + 1}. {item.email}
+                        </li>
+                      )
+                    )}
+                  </ul>
                 </div>
               </div>
             </div>
