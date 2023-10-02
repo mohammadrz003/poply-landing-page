@@ -4,7 +4,7 @@
 
   <p align="center">A community Based NFT Marketplace on <a href="https://www.monad.xyz/" target="_blank">Monad</a>.</p>
     <p align="center">
-<a href="https://discord.gg" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
+<a href="https://discord.gg/68wspMUhT7" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
   <a href="https://x.com/poply_xyz" target="_blank"><img src="https://img.shields.io/twitter/follow/poply_xyz.svg?style=social&label=Follow"></a>
 </p>
 
