@@ -65,7 +65,7 @@ const Testimonials = ({}: TestimonialsProps) => (
                   <div className="flex flex-col items-start p-8 bg-n-8 rounded-[0.9375rem] md:w-[21.75rem]">
                     <p className="quote mb-8">{item.text}</p>
                     <Link href={item.link} target="_blank">
-                      <Button className="mt-auto">Twitter</Button>
+                      <Button className="mt-auto">GitHub</Button>
                     </Link>
                   </div>
                 </div>
