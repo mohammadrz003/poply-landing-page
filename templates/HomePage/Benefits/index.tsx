@@ -20,10 +20,20 @@ const Benefits = ({}: BenefitsProps) => {
   };
 
   return (
-    <Section className="overflow-hidden">
+    <Section className="">
       <div className="container relative z-2">
+        <div className="relative -mt-32 sm:-mt-48 lg:-mt-80 z-10 w-full aspect-[740/436]">
+          <Image
+            src="/images/hero/hero-preview.png"
+            alt={"Hero preview"}
+            fill={true}
+            quality={100}
+            sizes="100vw"
+            className={`w-full`}
+          />
+        </div>
         <Heading
-          className="md:max-w-md lg:max-w-2xl"
+          className="md:max-w-md lg:max-w-2xl mt-20"
           title="Discover Our Best Features"
         />
         <Splide

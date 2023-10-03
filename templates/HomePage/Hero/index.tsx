@@ -2,7 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import { MouseParallax, ScrollParallax } from "react-just-parallax";
 import Section from "@/components/Section";
 import Button from "@/components/Button";
-import Image from "@/components/Image";
+import { default as ImageComponent } from "@/components/Image";
+import Image from "next/image";
 import Generating from "@/components/Generating";
 import Notification from "@/components/Notification";
 import Logos from "@/components/Logos";
@@ -20,17 +21,23 @@ const Hero = ({}: HeroProps) => {
 
   return (
     <Section
-      className="-mt-[4.75rem] pt-[8.25rem] pb-4 overflow-hidden md:pt-[9.75rem] md:pb-[4.8rem] lg:-mt-[5.25rem] lg:-mb-40 lg:pt-[12.25rem] lg:pb-[13.8rem]"
+      className="pt-12 pb-20 overflow-hidden sm:pt-[6rem] sm:pb-40 lg:pt-[6rem] lg:pb-[13.8rem]"
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
     >
+      <Image
+        src="/images/hero/hero-background.svg"
+        alt=""
+        fill
+        className="object-cover opacity-60"
+      />
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto mb-[3.875rem] text-center md:mb-20 lg:mb-[6.25rem]">
           <h1 className="h1 mb-6">
             <span className="inline-block relative">
               Poply
-              <Image
+              <ImageComponent
                 className="absolute top-full left-0 w-full xl:-mt-2"
                 src="/images/curve.png"
                 width={624}
@@ -48,17 +55,6 @@ const Hero = ({}: HeroProps) => {
             Join Waitlist
           </Button>
         </div>
-        <div className="relative z-10 w-full aspect-[740/436] max-w-[23.25rem] mx-auto md:max-w-5xl">
-          <Image
-            src="/images/hero/hero-preview.png"
-            alt={"Hero preview"}
-            fill={true}
-            quality={100}
-            sizes="100vw"
-            className={`w-full`}
-          />
-        </div>
-        {/* <Logos className="hidden relative z-10 mt-20 lg:block" /> */}
       </div>
       <div className="hidden absolute top-[55.25rem] left-10 right-10 h-0.25 bg-n-6 pointer-events-none xl:block"></div>
       <svg
