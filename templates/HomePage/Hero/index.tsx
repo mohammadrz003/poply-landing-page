@@ -1,12 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import { MouseParallax, ScrollParallax } from "react-just-parallax";
 import Section from "@/components/Section";
 import Button from "@/components/Button";
 import { default as ImageComponent } from "@/components/Image";
 import Image from "next/image";
-import Generating from "@/components/Generating";
-import Notification from "@/components/Notification";
-import Logos from "@/components/Logos";
+import { PiArrowUpRightBold } from "react-icons/pi";
+import Link from "next/link";
 
 type HeroProps = {};
 
@@ -51,9 +49,20 @@ const Hero = ({}: HeroProps) => {
             combining cutting-edge AI technology with the power of blockchain to
             unlock new possibilities in the NFT ecosystem
           </p>
-          <Button href="/waitlist" white>
-            Join Waitlist
-          </Button>
+          <Link
+            href="/waitlist"
+            className="relative items-center justify-center inline-block p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 rounded-full group hover:scale-105 transition-all duration-500"
+          >
+            <span className="absolute top-0 left-0 w-40 h-40 -mt-10 -ml-3 transition-all duration-700 bg-[#BDEE60] rounded-full blur-md ease"></span>
+            <span className="absolute inset-0 w-full h-full transition duration-700 ease">
+              <span className="absolute bottom-0 left-0 w-24 h-24 -ml-10 bg-[#A6FF96] rounded-full blur-md"></span>
+              <span className="absolute bottom-0 right-0 w-24 h-24 -mr-10 bg-[#CFFF65] rounded-full blur-md"></span>
+            </span>
+            <span className="relative flex items-center gap-x-3">
+              <span className="text-slate-900">Join Waitlist</span>{" "}
+              <PiArrowUpRightBold className="text-slate-900" />
+            </span>
+          </Link>
         </div>
       </div>
       <div className="hidden absolute top-[55.25rem] left-10 right-10 h-0.25 bg-n-6 pointer-events-none xl:block"></div>
