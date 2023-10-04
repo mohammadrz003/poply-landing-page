@@ -1,7 +1,6 @@
 "use client";
 
 import api from "@/constants/config/axiosConfig";
-import axios from "axios";
 import { ChangeEvent, FormEvent, useState } from "react";
 
 type Props = {};
