@@ -8,48 +8,48 @@ export const benefits = [
     id: "0",
     title: "Marketplace",
     text: "Users can participate in auctions or list NFTs with a fixed price and Buyers can place bids or purchase NFTs directly from the marketplace and Enable users to purchase NFTs listed for sale.",
-    backgroundUrl: "/images/benefits/card-1.svg",
+    backgroundUrl: "/images/benefits/grainy-1.png",
     icon: (
       <MdStoreMallDirectory
         style={{ color: "#000000", width: "20px", height: "20px" }}
       />
     ),
-    background: "#40F8FF",
+    color: "#000000",
     light: true,
   },
   {
     id: "1",
     title: "AI-ART",
     text: "provide consulting services, offering assistance in selecting, implementing, and customizing AI models for specific use cases.",
-    backgroundUrl: "/images/benefits/card-2.svg",
+    backgroundUrl: "/images/benefits/grainy-2.png",
     icon: (
       <FaRobot style={{ color: "#000000", width: "20px", height: "20px" }} />
     ),
-    background: "#FFC436",
+    color: "#000000",
   },
   {
     id: "2",
     title: "LaunchPad",
     text: "It provides a range of services and features to support the creation, promotion, and sale of NFT projects.",
-    backgroundUrl: "/images/benefits/card-3.svg",
+    backgroundUrl: "/images/benefits/grainy-3.png",
     icon: (
       <HiMiniRocketLaunch
         style={{ color: "#000000", width: "20px", height: "20px" }}
       />
     ),
-    background: "#D2DE32",
+    color: "#ffffff",
   },
   {
     id: "3",
     title: "Community engagement",
     text: "provide tools and resources to engage with the project's community",
-    backgroundUrl: "/images/benefits/card-4.svg",
+    backgroundUrl: "/images/benefits/grainy-4.png",
     icon: (
       <BsFillPeopleFill
         style={{ color: "#000000", width: "20px", height: "20px" }}
       />
     ),
-    background: "#B980F0",
+    color: "#000000",
     light: true,
   },
   //   {
