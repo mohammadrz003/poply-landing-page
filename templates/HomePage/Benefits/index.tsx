@@ -3,7 +3,8 @@ import Link from "next/link";
 import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 import Section from "@/components/Section";
 import Heading from "@/components/Heading";
-import Image from "@/components/Image";
+import Image from "next/image";
+import { default as ImageComponent } from "@/components/Image";
 
 import { benefits } from "@/mocks/benefits";
 
@@ -23,7 +24,7 @@ const Benefits = ({}: BenefitsProps) => {
     <Section className="">
       <div className="container relative z-2">
         <div className="relative -mt-32 sm:-mt-48 lg:-mt-80 z-10 w-full aspect-[740/436]">
-          <Image
+          <ImageComponent
             src="/images/hero/hero-preview.png"
             alt={"Hero preview"}
             fill={true}
@@ -54,35 +55,30 @@ const Benefits = ({}: BenefitsProps) => {
           ref={ref}
         >
           <SplideTrack>
-            {benefits.map((item) => (
+            {benefits.map((item, index) => (
               <SplideSlide key={item.id}>
-                <div
-                  className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
-                  style={{
-                    backgroundImage: `url(${item.backgroundUrl})`,
-                  }}
-                >
-                  <div className="relative z-2 flex flex-col h-[22.625rem] p-[2.375rem] pointer-events-none">
-                    <h5 className="h5 mb-5">{item.title}</h5>
-                    <p className="body-2 mb-6 text-n-3">{item.text}</p>
-                    <div className="flex items-center mt-auto">
-                      <div
-                        className="w-12 aspect-square rounded-lg flex justify-center items-center"
-                        style={{ background: item.background }}
-                      >
-                        {item.icon}
+                <div className="block relative bg-no-repeat md:max-w-[24rem]">
+                  <div className="relative aspect-square z-2 flex flex-col pointer-events-none rounded-[20px] overflow-hidden">
+                    <Image
+                      src={item.backgroundUrl}
+                      alt=""
+                      fill={true}
+                      sizes="(min-width: 768px) 50vw, (min-width: 1200px) 33vw, 100vw"
+                      className="absolute inset-0 z-1"
+                    />
+                    <div className="px-7 py-4 relative z-2 flex flex-col justify-between h-full bg-gradient-to-t from-slate-950/80 via-slate-950/10 to-transparent">
+                      <div>
+                        <h5 className="mb-5 font-bold text-3xl">
+                          0{index + 1}
+                        </h5>
+                        <h5 className="text-3xl mb-5 font-bold">{item.title}</h5>
                       </div>
+                      <p className={`body-2 mb-6 font-normal text-white`}>{item.text}</p>
                     </div>
                   </div>
                   {item.light && (
                     <div className="absolute top-0 left-1/4 w-full aspect-square bg-radial-gradient from-[#28206C] to-[#28206C]/0 to-70% pointer-events-none"></div>
                   )}
-                  <div
-                    className="absolute inset-0.5 bg-n-8"
-                    style={{
-                      clipPath: "url(#benefits)",
-                    }}
-                  ></div>
                 </div>
               </SplideSlide>
             ))}
@@ -91,26 +87,13 @@ const Benefits = ({}: BenefitsProps) => {
         <div className="flex mt-12 -mx-2 md:mt-15 lg:justify-center xl:mt-20">
           {benefits.map((item, index) => (
             <button
-              className="relative w-6 h-6 mx-2"
+              className={`relative h-2.5 mx-2 rounded-full ${index === activeIndex ? "bg-main_color w-5" : "bg-white w-2.5"}`}
               onClick={() => handleClick(index)}
               key={item.id}
             >
-              <span
-                className={`absolute inset-0 bg-conic-gradient rounded-full transition-opacity ${
-                  index === activeIndex ? "opacity-100" : "opacity-0"
-                }`}
-              ></span>
-              <span className="absolute inset-0.25 bg-n-8 rounded-full">
-                <span className="absolute inset-2 bg-n-1 rounded-full"></span>
-              </span>
             </button>
           ))}
         </div>
-        <svg className="block" width={0} height={0}>
-          <clipPath id="benefits" clipPathUnits="objectBoundingBox">
-            <path d="M0.079,0 h0.756 a0.079,0.083,0,0,1,0.058,0.026 l0.086,0.096 A0.079,0.083,0,0,1,1,0.179 V0.917 c0,0.046,-0.035,0.083,-0.079,0.083 H0.079 c-0.044,0,-0.079,-0.037,-0.079,-0.083 V0.083 C0,0.037,0.035,0,0.079,0" />
-          </clipPath>
-        </svg>
       </div>
     </Section>
   );
