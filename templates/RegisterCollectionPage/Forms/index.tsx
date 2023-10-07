@@ -57,7 +57,7 @@ const Forms = ({}: HeroProps) => {
         <h1 className="text-2xl mb-10 lg:text-3xl font-semibold">
           Register Collection
         </h1>
-        {connectionStatus === "connected" ? (
+        {/* {connectionStatus === "connected" ? (
           <div className="flex flex-col gap-y-3 items-start">
             <button className=" d-btn d-btn-primary" onClick={handleSignout}>
               Disconnect Metamask
@@ -76,7 +76,7 @@ const Forms = ({}: HeroProps) => {
         )}
 
         <p>status is: {status}</p>
-        <p>address is: {address ? address : "No wallet connected"}</p>
+        <p>address is: {address ? address : "No wallet connected"}</p> */}
         <Fields />
       </div>
     </Section>

@@ -1,26 +1,26 @@
 export const howItWorks = [
   {
     id: "0",
-    title: "Discoverability",
-    text: "Navigating a vast sea of NFTs can be overwhelming. AIFT's AI-powered curation enables personalized recommendations, aiding users in finding relevant and high-quality NFTs.",
+    title: "Creativity Unleashed",
+    text: "Users tap into the limitless potential of AI to generate unique, one-of-a-kind digital art.",
     image: "/images/how-it-works/1.jpg",
   },
   {
     id: "1",
-    title: "Authentication",
-    text: "Counterfeit NFTs and scams are prevalent. AIFT's AI-driven authentication ensures the legitimacy of NFTs, enhancing trust and reducing the risk of fraud.",
+    title: "Minting Possibilities",
+    text: "Instantly mint AI-generated creations into Poply’s AI NFTs, securing ownership and authenticity of prompts and arts.",
     image: "/images/how-it-works/2.png",
   },
   {
     id: "2",
-    title: "Market Manipulation",
-    text: "Price manipulation and speculation can distort the market. AIFT's AI analytics can provide insights into genuine value, mitigating drastic price fluctuations.",
+    title: "Prompt Recycling",
+    text: "Users can also sell or purchase prompts they've created, fostering collaboration and artistic exploration.",
     image: "/images/how-it-works/3.png",
   },
   {
     id: "3",
-    title: "Lack of Understanding",
-    text: "Many potential users are unfamiliar with NFTs. AIFT's user-friendly interface and educational resources can bridge this knowledge gap, attracting a broader audience.",
+    title: "Artistic Autonomy",
+    text: "AIFT simplifies art creation, enabling everyone to be a creator. Experience the future of AI-driven creativity and art commerce on Poply, where imagination meets opportunity.",
     image: "/images/how-it-works/4.png",
   },
 ];

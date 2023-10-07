@@ -5,19 +5,20 @@ export const navigation = [
     url: "/contact-us",
   },
 
-  {
-    id: "2",
-    title: "About us",
-    url: "/about-us",
-  },
-  {
-    id: "3",
-    title: "Roadmap",
-    url: "/roadmap",
-  },
+  // {
+  //   id: "3",
+  //   title: "Roadmap",
+  //   url: "#our-roadmap",
+  // },
   {
     id: "4",
     title: "Register Collection",
     url: "/register-collection",
+  },
+  {
+    id: "2",
+    title: "Documentation",
+    url: "https://docs.poply.xyz/",
+    newWindow: true,
   },
 ];

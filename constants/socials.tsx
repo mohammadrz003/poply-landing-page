@@ -7,7 +7,7 @@ export const socials = [
     id: "0",
     title: "Discord",
     Icon: BsDiscord,
-    url: "#",
+    url: "https://discord.gg/68wspMUhT7",
   },
   {
     id: "1",
@@ -25,12 +25,6 @@ export const socials = [
     id: "3",
     title: "Telegram",
     Icon: BiLogoTelegram,
-    url: "#",
-  },
-  {
-    id: "4",
-    title: "Facebook",
-    Icon: BsFacebook,
     url: "#",
   },
 ];

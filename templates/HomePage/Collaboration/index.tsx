@@ -1,104 +1,72 @@
 import { BsCheckCircleFill } from "react-icons/bs";
 import Section from "@/components/Section";
 import Button from "@/components/Button";
-import Image from "@/components/Image";
 
 import { text, content, apps } from "@/mocks/collaboration";
+import Image from "next/image";
+import Link from "next/link";
 
 type CollaborationProps = {};
 
 const Collaboration = ({}: CollaborationProps) => {
   return (
-    <Section crosses>
-      <div className="container lg:flex">
-        <div className="max-w-[25rem]">
-          <h2 className="h2 mb-4 md:mb-8">Our mission</h2>
-          <ul className="max-w-[22.5rem] mb-10 md:mb-14">
-            {content.map((item) => (
-              <li className="mb-3 py-3" key={item.id}>
-                <div className="flex items-center">
-                  <BsCheckCircleFill className="w-6 h-6 text-[#D3F56E]" />
-                  <h6 className="body-2 ml-5">{item.title}</h6>
-                </div>
-                {item.text && (
-                  <p className="body-2 mt-3 text-n-4">{item.text}</p>
-                )}
-              </li>
-            ))}
-          </ul>
-          <Button href="https://docs.poply.xyz/our-mission" target="_blank">
-            Read All Missios
-          </Button>
+    <Section>
+      <div className="container">
+        <div className="flex md:justify-center text-[28px] lg:text-5xl font-bold">
+          <h3 className="leading-normal">
+            <span className="text-stroke text-[#0E0C15] tracking-wider">
+              Realize
+            </span>{" "}
+            Your Idea Easily
+          </h3>
         </div>
-        <div className="mt-15 lg:mt-0 lg:ml-auto xl:w-[37.5rem]">
-          <div className="relative lg:w-[22.5rem] lg:mx-auto">
-            <p className="body-2 mb-4 text-n-4 md:mb-16 lg:mb-32">{text}</p>
-            <div className="relative left-1/2 flex w-[22.5rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale-75 md:scale-100">
-              <div className="flex w-60 aspect-square m-auto border border-n-6 rounded-full">
-                <div className="w-[5.75rem] aspect-square m-auto p-[0.1875rem] bg-[#D3F56E] rounded-full">
-                  <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
-                    <Image
-                      src="/images/logo.png"
-                      width={48}
-                      height={48}
-                      alt="Brainwave"
-                    />
-                  </div>
-                </div>
-              </div>
-              <ul>
-                {apps.map((app, index) => (
-                  <li
-                    className={`absolute top-0 left-1/2 h-1/2 -ml-[1.625rem] ${
-                      index === 1 && "rotate-[45deg]"
-                    } ${index === 2 && "rotate-[90deg]"} ${
-                      index === 3 && "rotate-[135deg]"
-                    } ${index === 4 && "rotate-[180deg]"} ${
-                      index === 5 && "rotate-[225deg]"
-                    } ${index === 6 && "rotate-[270deg]"} ${
-                      index === 7 && "rotate-[315deg]"
-                    } origin-bottom`}
-                    key={app.id}
-                  >
-                    <div
-                      className={`relative -top-[1.625rem] flex w-[3.25rem] h-[3.25rem] bg-n-7 border border-n-1/15 rounded-xl ${
-                        index === 1 && "-rotate-[45deg]"
-                      } ${index === 2 && "-rotate-[90deg]"} ${
-                        index === 3 && "-rotate-[135deg]"
-                      } ${index === 4 && "-rotate-[180deg]"} ${
-                        index === 5 && "-rotate-[225deg]"
-                      } ${index === 6 && "-rotate-[270deg]"} ${
-                        index === 7 && "-rotate-[315deg]"
-                      }`}
-                    >
-                      <Image
-                        className="m-auto"
-                        src={app.icon}
-                        width={app.width}
-                        height={app.height}
-                        alt={app.title}
-                      />
-                    </div>
-                  </li>
-                ))}
-              </ul>
-              <div className="hidden absolute top-1/2 right-full w-[32.625rem] -mt-1 mr-10 pointer-events-none xl:block">
-                <Image
-                  src="/images/collaboration/curve-1.svg"
-                  width={522}
-                  height={182}
-                  alt="Curve 1"
-                />
-              </div>
-              <div className="hidden absolute top-1/2 left-full w-[10.125rem] -mt-1 ml-10 pointer-events-none xl:block">
-                <Image
-                  src="/images/collaboration/curve-2.svg"
-                  width={162}
-                  height={76}
-                  alt="Curve 2"
-                />
-              </div>
+        <div className="flex flex-col-reverse mt-5 md:flex-row 2xl:mt-10">
+          <div className="w-full mt-5 2xl:mt-0 md:w-1/2 flex justify-center items-center relative">
+            <div className="w-[100%] md:w-[100%] lg:w-[75%] relative aspect-square">
+              <Image
+                src="/images/collaboration/nft-chain.png"
+                alt="nft chain"
+                fill
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="-rotate-[10deg]"
+              />
             </div>
+            <Image
+              src="/images/collaboration/up-arrow.png"
+              alt=""
+              width={256}
+              height={256}
+              className="-scale-x-100 w-[21%] md:w-16 md:rotate-[25deg] left-0 -top-[3%] rotate-[32deg] 2xl:w-32 h-auto 2xl:rotate-[25deg] absolute md:scale-x-100 md:left-auto md:top-auto md:hidden md:bottom-[3%] md:-right-[5%] 2xl:bottom-[12%] 2xl:-right-[3%]"
+            />
+          </div>
+          <div className="flex flex-col justify-center items-start w-full md:w-1/2">
+            <h3 className="text-main_color mt-3 2xl:mt-10 text-base md:text-sm lg:text-lg">
+              With just a simple prompt, our native AI API transforms ideas into
+              stunning visual NFTs.
+            </h3>
+            <p className="text-sm mt-5 md:text-xs lg:text-base 2xl:mt-9 leading-relaxed">
+              Being an artist is not easy! but what if you are a good prompt
+              writer :)
+              <br />
+              our AIFT (AI-Generated Image-to-NFT Feature) is here to help you
+              with generating eye-chatching arts in not time. this is
+              Poply&apos;s cutting-edge innovation that empowers users to
+              effortlessly create and mint AI-crafted art.
+            </p>
+            <Link
+              href="https://docs.poply.xyz/AIFT"
+              target="_blank"
+              className="relative items-center justify-center inline-block p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 rounded-lg group hover:scale-105 transition-all duration-500 mt-6 md:text-xs lg:text-base"
+            >
+              <span className="absolute top-0 left-0 w-40 h-40 -mt-10 -ml-3 transition-all duration-700 bg-[#BDEE60] rounded-lg blur-md ease"></span>
+              <span className="absolute inset-0 w-full h-full transition duration-700 ease">
+                <span className="absolute bottom-0 left-0 w-24 h-24 -ml-10 bg-[#A6FF96] rounded-lg blur-md"></span>
+                <span className="absolute bottom-0 right-0 w-24 h-24 -mr-10 bg-[#CFFF65] rounded-lg blur-md"></span>
+              </span>
+              <span className="relative flex items-center">
+                <span className="text-slate-900">Explore More</span>
+              </span>
+            </Link>
           </div>
         </div>
       </div>

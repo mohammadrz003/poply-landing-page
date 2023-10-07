@@ -58,6 +58,7 @@ const Header = ({}: HeaderProps) => {
                 href={item.url}
                 onClick={() => item.url.startsWith(pathname) && handleClick()}
                 key={item.id}
+                target={item.newWindow ? "_blank" : "_self"}
               >
                 {item.title}
               </Link>
@@ -79,10 +80,10 @@ const Header = ({}: HeaderProps) => {
         <Link
           href="https://app.poply.xyz"
           target="_blank"
-          className="hidden relative p-0.5 lg:inline-flex items-center justify-center font-semibold overflow-hidden group rounded-full"
+          className="hidden relative p-0.5 lg:inline-flex items-center justify-center font-semibold overflow-hidden group rounded-lg"
         >
           <span className="w-full h-full bg-gradient-to-br from-[#BDEE60] via-[#A6FF96] to-[#CFFF65] group-hover:from-[#CFFF65] group-hover:via-[#A6FF96] group-hover:to-[#BDEE60] absolute"></span>
-          <span className="relative px-4 py-2 transition-all ease-out bg-n-8 rounded-full group-hover:bg-opacity-0 duration-400">
+          <span className="relative px-4 py-2 transition-all ease-out bg-n-8 rounded-lg group-hover:bg-opacity-0 duration-400">
             <span className="relative text-white group-hover:text-slate-900 text-sm">
               Launch App
             </span>

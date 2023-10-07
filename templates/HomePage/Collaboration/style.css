@@ -1,0 +1,6 @@
+@layer utilities {
+  .text-stroke {
+    text-shadow: -1px -1px 0 #d3f56e, 1px -1px 0 #d3f56e, -1px 1px 0 #d3f56e,
+      1px 1px 0 #d3f56e;
+  }
+}
