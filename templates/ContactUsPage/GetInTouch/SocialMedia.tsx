@@ -4,7 +4,7 @@ type Props = {};
 
 const SocialMedia = (props: Props) => {
   return (
-    <div className="col-span-5 rounded-lg w-full bg-gradient-to-br from-main_color to-[#89F9E8] p-5 text-slate-950 space-y-7">
+    <div className="col-span-11 lg:col-span-5 rounded-lg w-full bg-gradient-to-br from-main_color to-[#89F9E8] p-5 text-slate-950 space-y-7">
       <h2 className="font-semibold text-xl">Get in touch</h2>
       <p className="text-base">
         Reach Out to Us: We&apos;re Here to Listen and Assist You

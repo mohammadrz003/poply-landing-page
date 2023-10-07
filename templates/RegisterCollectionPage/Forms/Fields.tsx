@@ -3,6 +3,7 @@
 import api from "@/constants/config/axiosConfig";
 import { ChangeEvent, FormEvent, useState } from "react";
 import Pictures from "./Pictures";
+import { toast } from "react-toastify";
 
 type Props = {};
 
@@ -35,6 +36,7 @@ const Fields = (props: Props) => {
 
   const handleFormSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    toast.info("Collection registration will be available soon 🚀");
   };
 
   return (
