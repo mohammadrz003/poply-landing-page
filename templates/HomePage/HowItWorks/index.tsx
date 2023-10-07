@@ -74,15 +74,6 @@ const HowItWorks = ({}: HowItWorksProps) => {
             onPrev={() => ref.current?.go("<")}
             onNext={() => ref.current?.go(">")}
           />
-          <div className="absolute top-0 -left-[10rem] w-[29.5rem] h-[29.5rem] mix-blend-color-dodge opacity-20 pointer-events-none">
-            <Image
-              className="absolute top-1/2 left-1/2 w-[55.5rem] max-w-[55.5rem] h-[61.5rem] -translate-x-1/2 -translate-y-1/2"
-              src="/images/how-it-works/gradient.png"
-              width={984}
-              height={984}
-              alt="Gradient"
-            />
-          </div>
           <div className="hidden grid-cols-4 gap-6 mt-20 xl:grid">
             {howItWorks.map((item, index) => (
               <div

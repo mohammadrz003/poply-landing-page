@@ -1,5 +1,6 @@
 @import "../components/Header/style.css";
 @import "../templates/HomePage/Collaboration/style.css";
+@import "../templates/RegisterCollectionPage/Forms/style.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
