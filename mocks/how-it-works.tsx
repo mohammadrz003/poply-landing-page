@@ -3,7 +3,7 @@ export const howItWorks = [
     id: "0",
     title: "Creativity Unleashed",
     text: "Users tap into the limitless potential of AI to generate unique, one-of-a-kind digital art.",
-    image: "/images/how-it-works/1.jpg",
+    image: "/images/how-it-works/1.png",
   },
   {
     id: "1",
