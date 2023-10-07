@@ -22,12 +22,9 @@ const HowItWorks = ({}: HowItWorksProps) => {
   };
 
   return (
-    <Section className="lg:-mb-16" crosses>
+    <Section className="lg:-mb-16">
       <div className="container">
-        <Heading
-          tag="Problems and solutions"
-          title="Which problems we solve?"
-        />
+        <Heading title="What Features AIFT Has?" />
         <Splide
           className="splide-custom"
           options={{

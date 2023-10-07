@@ -6,8 +6,8 @@ import { BsFillPeopleFill } from "react-icons/bs";
 export const benefits = [
   {
     id: "0",
-    title: "Marketplace",
-    text: "Users can participate in auctions or list NFTs with a fixed price and Buyers can place bids or purchase NFTs directly from the marketplace and Enable users to purchase NFTs listed for sale.",
+    title: "Community-Centric",
+    text: "Our platform will prioritize building a vibrant community of artists, collectors, and enthusiasts, fostering engagement and interaction within the marketplace.",
     backgroundUrl: "/images/benefits/grainy-1.png",
     icon: (
       <MdStoreMallDirectory
@@ -20,7 +20,7 @@ export const benefits = [
   {
     id: "1",
     title: "AI-ART",
-    text: "provide consulting services, offering assistance in selecting, implementing, and customizing AI models for specific use cases.",
+    text: "allows users to easily create unique digital art using AI algorithms with just a prompt. These AI-generated artworks can be minted as an AI collection on Poply.",
     backgroundUrl: "/images/benefits/grainy-2.png",
     icon: (
       <FaRobot style={{ color: "#000000", width: "20px", height: "20px" }} />
@@ -29,8 +29,8 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "LaunchPad",
-    text: "It provides a range of services and features to support the creation, promotion, and sale of NFT projects.",
+    title: "Artist Collaboration",
+    text: "We will actively collaborate with artists, ensuring that their creative expressions are respected while enhancing their exposure in the NFT space.",
     backgroundUrl: "/images/benefits/grainy-3.png",
     icon: (
       <HiMiniRocketLaunch
@@ -41,8 +41,8 @@ export const benefits = [
   },
   {
     id: "3",
-    title: "Community engagement",
-    text: "provide tools and resources to engage with the project's community",
+    title: "Collection-wide offers",
+    text: "Extend offers to every item within a collection, offering an inclusive opportunity for collection holders to accept.",
     backgroundUrl: "/images/benefits/grainy-4.png",
     icon: (
       <BsFillPeopleFill

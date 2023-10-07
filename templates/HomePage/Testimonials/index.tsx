@@ -14,7 +14,7 @@ type TestimonialsProps = {};
 const Testimonials = ({}: TestimonialsProps) => (
   <Section className="overflow-hidden">
     <div className="container relative z-2">
-      <Heading tag="Uniting talents, driving success" title="Meet our Team" />
+      <Heading title="Meet our Team" />
       <Splide
         className="splide-custom splide-visible"
         options={{
@@ -63,9 +63,34 @@ const Testimonials = ({}: TestimonialsProps) => (
                 </div>
                 <div className="relative flex z-1 bg-conic-gradient p-0.25 rounded-2xl md:ml-auto">
                   <div className="flex flex-col items-start p-8 bg-n-8 rounded-[0.9375rem] md:w-[21.75rem]">
-                    <p className="quote mb-8">{item.text}</p>
-                    <Link href={item.link} target="_blank">
-                      <Button className="mt-auto">GitHub</Button>
+                    <div className="flex items-center mb-4 md:hidden gap-x-3">
+                      <div className="relative w-12 aspect-square mb-auto">
+                        <Image
+                          className="w-full h-full object-cover rounded-full"
+                          src={item.logoUrl}
+                          fill
+                          sizes="100vw"
+                          quality={100}
+                          alt={item.name}
+                        />
+                      </div>
+                      <div className="flex flex-col">
+                        <div className="text-sm">{item.name}</div>
+                        <div className="text-xs text-n-4">{item.role}</div>
+                      </div>
+                    </div>
+                    <p className="text-sm md:quote mb-8">{item.text}</p>
+                    <Link
+                      href={item.link}
+                      target="_blank"
+                      className="relative p-0.5 inline-flex items-center justify-center font-semibold overflow-hidden group rounded-lg"
+                    >
+                      <span className="w-full h-full bg-gradient-to-br from-[#BDEE60] via-[#A6FF96] to-[#CFFF65] group-hover:from-[#CFFF65] group-hover:via-[#A6FF96] group-hover:to-[#BDEE60] absolute"></span>
+                      <span className="relative px-4 py-2 transition-all ease-out bg-n-8 rounded-lg group-hover:bg-opacity-0 duration-400">
+                        <span className="relative text-white group-hover:text-slate-900 text-sm">
+                          GitHub
+                        </span>
+                      </span>
                     </Link>
                   </div>
                 </div>
