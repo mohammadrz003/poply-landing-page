@@ -50,7 +50,9 @@ const Benefits = ({}: BenefitsProps) => {
               },
             },
           }}
-          onMoved={(e, newIndex) => setActiveIndex(newIndex)}
+          onMoved={(e, newIndex) => {
+            setActiveIndex(newIndex);
+          }}
           hasTrack={false}
           ref={ref}
         >
@@ -71,9 +73,13 @@ const Benefits = ({}: BenefitsProps) => {
                         <h5 className="mb-5 font-bold text-3xl">
                           0{index + 1}
                         </h5>
-                        <h5 className="text-3xl mb-5 font-bold">{item.title}</h5>
+                        <h5 className="text-3xl mb-5 font-bold">
+                          {item.title}
+                        </h5>
                       </div>
-                      <p className={`body-2 mb-6 font-normal text-white`}>{item.text}</p>
+                      <p className={`body-2 mb-6 font-normal text-white`}>
+                        {item.text}
+                      </p>
                     </div>
                   </div>
                   {item.light && (
@@ -87,11 +93,12 @@ const Benefits = ({}: BenefitsProps) => {
         <div className="flex mt-12 -mx-2 md:mt-15 lg:justify-center xl:mt-20">
           {benefits.map((item, index) => (
             <button
-              className={`relative h-2.5 mx-2 rounded-full ${index === activeIndex ? "bg-main_color w-5" : "bg-white w-2.5"}`}
+              className={`relative h-2.5 mx-2 rounded-full ${
+                index === activeIndex ? "bg-main_color w-5" : "bg-white w-2.5"
+              }`}
               onClick={() => handleClick(index)}
               key={item.id}
-            >
-            </button>
+            ></button>
           ))}
         </div>
       </div>

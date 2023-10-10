@@ -32,6 +32,14 @@ export const roadmap = [
     status: "progress",
     imageUrl: "/images/roadmap/distribution.png",
   },
+  {
+    id: "4",
+    title: "NFT Distribution",
+    text: "The launchpad feature facilitates fair and efficient NFT distribution, ensuring equitable access to newly launched collections for all users.",
+    date: "Q1 2024",
+    status: "progress",
+    imageUrl: "/images/roadmap/distribution.png",
+  },
 ];
 
 export const roadmapFull = [
