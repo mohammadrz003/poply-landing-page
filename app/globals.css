@@ -42,11 +42,4 @@
     @apply md:grid !important;
     @apply md:grid-cols-3 md:gap-x-10 md:gap-y-[4.5rem] xl:gap-y-[6rem];
   }
-
-  .splide-roadmap-active .splide__slide.is-visible.is-active {
-    @apply !w-[280px];
-  }
-  .splide-roadmap-inactive .splide__slide {
-    @apply w-[140px];
-  }
 }
