@@ -17,9 +17,9 @@ type RoadmapProps = {};
 const Roadmap = ({}: RoadmapProps) => (
   <Section className="overflow-hidden">
     <div className="container md:pb-10 relative" id="our-roadmap">
-      <div className="absolute top-[10%] lg:top-0 left-0 lg:left-[20%] w-72 lg:w-80 aspect-square rounded-tl-xl rounded-tr-full rounded-br-3xl rounded-bl-2xl blur-[100px] opacity-30 lg:opacity-[.25] css-blurry-gradient" />
-      <div className="absolute top-[35%] -right-[20%] lg:top-[30%] lg:right-0 w-80 aspect-square rounded-tl-xl rounded-tr-full rounded-br-3xl rounded-bl-2xl blur-[100px] opacity-30 lg:opacity-[.25] css-blurry-gradient" />
-      <div className="absolute bottom-[23%] left-0 w-80 aspect-square rounded-tl-xl rounded-tr-full rounded-br-3xl rounded-bl-2xl blur-[100px] opacity-30 lg:opacity-[.25] css-blurry-gradient" />
+      <div className="absolute top-[10%] lg:top-0 left-0 lg:left-[20%] w-72 lg:w-80 aspect-square rounded-tl-xl rounded-tr-full rounded-br-3xl rounded-bl-2xl blur-[100px] opacity-20 lg:opacity-20 css-blurry-gradient" />
+      <div className="absolute top-[35%] -right-[20%] lg:top-[30%] lg:right-0 w-80 aspect-square rounded-tl-xl rounded-tr-full rounded-br-3xl rounded-bl-2xl blur-[100px] opacity-20 lg:opacity-20 css-blurry-gradient" />
+      <div className="absolute bottom-[23%] left-0 w-80 aspect-square rounded-tl-xl rounded-tr-full rounded-br-3xl rounded-bl-2xl blur-[100px] opacity-20 lg:opacity-20 css-blurry-gradient" />
       <Heading title="Our Roadmap for Success" />
       <div className="w-full flex justify-center lg:justify-end relative">
         <div className="relative transform lg:-translate-x-14 lg:w-1/2 flex flex-col lg:flex-row items-center lg:pb-10">
