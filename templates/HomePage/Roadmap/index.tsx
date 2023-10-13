@@ -81,8 +81,8 @@ const Roadmap = ({}: RoadmapProps) => (
             <div className="flex justify-center items-center w-[90px] aspect-square rounded-full bg-n-8">
               <div className="flex justify-center items-center w-[72px] aspect-square rounded-full bg-gradient-to-l from-transparent from-25% via-green-600 via-65% to-lime-500">
                 <div className="flex flex-col items-center text-xs justify-center w-[70px] aspect-square rounded-full bg-n-8 transform translate-x-[1px]">
-                  <span>Q4</span>
-                  <span>2023</span>
+                  <span>Q1</span>
+                  <span>2024</span>
                 </div>
               </div>
             </div>
@@ -110,8 +110,8 @@ const Roadmap = ({}: RoadmapProps) => (
             <div className="flex justify-center items-center w-[90px] aspect-square rounded-full bg-n-8">
               <div className="flex justify-center items-center w-[72px] aspect-square rounded-full bg-gradient-to-l from-transparent from-25% via-green-600 via-65% to-lime-500">
                 <div className="-scale-x-100 flex flex-col items-center text-xs justify-center w-[70px] aspect-square rounded-full bg-n-8 transform translate-x-[1px]">
-                  <span>Q4</span>
-                  <span>2023</span>
+                  <span>Q1</span>
+                  <span>2024</span>
                 </div>
               </div>
             </div>
