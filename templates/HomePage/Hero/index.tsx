@@ -1,10 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import Section from "@/components/Section";
-import Button from "@/components/Button";
-import { default as ImageComponent } from "@/components/Image";
+import { toast } from "react-toastify";
 import Image from "next/image";
 import { PiArrowUpRightBold } from "react-icons/pi";
-import Link from "next/link";
 
 type HeroProps = {};
 
@@ -32,16 +30,16 @@ const Hero = ({}: HeroProps) => {
       />
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto mb-[3.875rem] text-center md:mb-20 lg:mb-[6.25rem]">
-          <h1 className="h1 mb-6">
+          <h1 className="mb-6 h1">
             Poply, The Community Based NFT Marketplace
           </h1>
-          <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
+          <p className="max-w-3xl mx-auto mb-6 body-1 text-n-2 lg:mb-8">
             combining cutting-edge AI technology with the power of blockchain to
             unlock new possibilities in the NFT ecosystem
           </p>
-          <Link
-            href="/waitlist"
-            className="relative items-center justify-center inline-block p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 rounded-lg group hover:scale-105 transition-all duration-500"
+          <button
+            onClick={() => toast.info("Coming soon!")}
+            className="relative items-center justify-center inline-block p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 transition-all duration-500 rounded-lg hover:scale-105"
           >
             <span className="absolute top-0 left-0 w-40 h-40 -mt-10 -ml-3 transition-all duration-700 bg-[#BDEE60] rounded-lg blur-md ease"></span>
             <span className="absolute inset-0 w-full h-full transition duration-700 ease">
@@ -52,7 +50,7 @@ const Hero = ({}: HeroProps) => {
               <span className="text-slate-900">Join Waitlist</span>{" "}
               <PiArrowUpRightBold className="text-slate-900" />
             </span>
-          </Link>
+          </button>
         </div>
       </div>
       <div className="hidden absolute top-[55.25rem] left-10 right-10 h-0.25 bg-n-6 pointer-events-none xl:block"></div>
