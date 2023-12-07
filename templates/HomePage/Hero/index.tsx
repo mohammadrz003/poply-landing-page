@@ -3,6 +3,7 @@ import Section from "@/components/Section";
 import { toast } from "react-toastify";
 import Image from "next/image";
 import { PiArrowUpRightBold } from "react-icons/pi";
+import Link from "next/link";
 
 type HeroProps = {};
 
@@ -37,9 +38,9 @@ const Hero = ({}: HeroProps) => {
             combining cutting-edge AI technology with the power of blockchain to
             unlock new possibilities in the NFT ecosystem
           </p>
-          <button
-            onClick={() => toast.info("Coming soon!")}
-            className="relative items-center justify-center inline-block p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 transition-all duration-500 rounded-lg hover:scale-105"
+          <Link
+            href="/waitlist"
+            className="relative items-center justify-center inline-block p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 transition-all duration-500 rounded-lg group hover:scale-105"
           >
             <span className="absolute top-0 left-0 w-40 h-40 -mt-10 -ml-3 transition-all duration-700 bg-[#BDEE60] rounded-lg blur-md ease"></span>
             <span className="absolute inset-0 w-full h-full transition duration-700 ease">
@@ -50,7 +51,7 @@ const Hero = ({}: HeroProps) => {
               <span className="text-slate-900">Join Waitlist</span>{" "}
               <PiArrowUpRightBold className="text-slate-900" />
             </span>
-          </button>
+          </Link>
         </div>
       </div>
       <div className="hidden absolute top-[55.25rem] left-10 right-10 h-0.25 bg-n-6 pointer-events-none xl:block"></div>
