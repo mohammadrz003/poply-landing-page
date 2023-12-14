@@ -23,7 +23,7 @@ const Benefits = ({}: BenefitsProps) => {
   return (
     <Section className="">
       <div className="container relative z-2">
-        <div className="relative -mt-32 sm:-mt-48 lg:-mt-80 z-10 w-full aspect-[740/436]">
+        {/* <div className="relative -mt-32 sm:-mt-48 lg:-mt-80 z-10 w-full aspect-[740/436]">
           <ImageComponent
             src="/images/hero/hero-preview.png"
             alt={"Hero preview"}
@@ -32,7 +32,7 @@ const Benefits = ({}: BenefitsProps) => {
             sizes="100vw"
             className={`w-full`}
           />
-        </div>
+        </div> */}
         <Heading
           className="md:max-w-md lg:max-w-2xl mt-20"
           title="Discover Our Best Features"

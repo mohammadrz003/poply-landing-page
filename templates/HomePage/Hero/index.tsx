@@ -18,7 +18,7 @@ const Hero = ({}: HeroProps) => {
 
   return (
     <Section
-      className="pt-12 pb-20 overflow-hidden sm:pt-[6rem] sm:pb-40 lg:pt-[6rem] lg:pb-[13.8rem]"
+      className="pt-12 pb-20 overflow-hidden"
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
